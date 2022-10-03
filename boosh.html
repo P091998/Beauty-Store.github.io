@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"/>
+      
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Products</title>
+</head>
+<body>
+    <div class="container-fluid text-center" style="background-image: url('boosh_bg.jpg'); height: 100px;" id="colourpop_top">
+        <!-- <h1>Boosh</h1> -->
+    </div>
+
+    <div class="container">
+        <div class="row" id="colour_bg">
+            <div class="col-md-4 col-sm-12 mt-5">
+                <img src="boosh_bg1.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <img src="boosh_bg3.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <img src="boosh_bg2.jpg" alt="">
+            </div>
+            <!-- <div class="col-md-4 col-sm-12 mt-5">
+                <img src="colourpop_bg5.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <img src="colourpop_bg6.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <img src="colourpop_bg7.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container-fluid text-center mt-5" id="getDetaolsBtn">
+        <button class="btn btn-success" id="searchBrands" value="boosh">Get Details</button>
+    </div>
+
+    <div class="container mt-5" id="display">
+        <div class="row" >
+            <div class="col-md-6 col-sm-12" id="displayImage">
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <table id="tableResult" style="color: rgb(38, 27, 17); background-color: peachpuff;" border="1">
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="change">
+        <div class="row text-center mt-5">
+            <div class="col-sm-4">
+                <button class="btn btn-primary" id="previous">Previous</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" id="next">Next</button>
+            </div>
+            <div class="col-sm-4">
+                <!-- <button id="back">Back</button> -->
+                <a href="index.html" class="btn btn-primary" id="back">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5" id="quantity" style="float: left; margin-left: 50px;">
+        <div class="col-sm-12">
+            <span>Quantity (min 1)</span>
+            <span><button id="decrease">-</button></span>
+            <span><button id="count">1</button></span>
+            <span><button id="increase">+</button></span>
+        </div>
+        <!-- <div class="col-sm-6">
+            <span><button id="checkout">Proceed to checkout</button></span>
+        </div> -->
+    </div>
+          <br><br>  
+    <div class="container text-center mt-5 mb-3" id="buyNow" style="width: 200px;">
+        <a href="#" class="btn btn-success" id="order">Buy Now</a>
+        <!-- <button class="btn btn-success" id="order">Buy Now</button> -->
+    </div>
+
+    <div class="container my-5" id="address">
+        <table class="col-md-6 col-sm-12 mt-5" class="text-center" id="orderDetails" style="color: rgb(38, 27, 17);">
+
+        </table>
+
+        <h3 class="text-center text-primary">Enter your details</h3>
+       
+        <div class="bg-dark text-white p-3 mt-3">
+            <form>                      
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+                         
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4 required">
+                   
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                    
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2"
+                    placeholder="Apartment, studio, or floor" required>
+                   
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" required>
+                    
+                <div class="row">
+                    <label for="inputState" class="form-label">Type of Address:</label>
+                    <div class="form-check col-sm-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Home</label>
+                    </div>   
+                    <div class="form-check col-sm-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Work</label>
+                    </div>   
+                    <div class="form-check col-sm-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Others</label>
+                    </div>   
+                </div>  
+
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" required>
+                <!-- <button class="btn btn-primary text-center mt-2" id="save">Save</button>                     -->
+            </form>
+        </div>
+    </div>
+
+    <div class="container" id="orderItems">
+        <!-- <p id="orderText">Order details:</p> -->
+        <table class="mt-5" class="text-center" id="orderDetails" style="color: rgb(38, 27, 17);">
+
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="row col-sm-12">
+            <table class="mt-5" class="text-center" id="orderDetailsPayment" style="color: rgb(38, 27, 17);">
+
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="footer">
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <a href="#" class="btn btn-primary" id="checkout">Save and Continue</a>
+                <!-- <span><button class="btn btn-primary" id="checkout" >Save and Continue</button></span> -->
+            </div>
+            <div class="col-sm-6">
+                <!-- <button id="back">Back</button> -->
+                <a href="index.html" class="btn btn-primary" id="back" style="float: right;">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="paymentOption">
+        <div class="row" >
+            <div class="col-sm-12">
+                <form>
+                    <p>Select a payment option:</p>
+                    <input type="radio" id="radioBtn" name="fav_language" value="Net Banking">
+                    <label for="Net Banking" >Net Banking</label> 
+                    <input type="radio" id="radioBtn" name="fav_language" value="Debit Card">
+                    <label for="Debit Card">Debit Card</label>
+                    <input type="radio" id="radioBtn" name="fav_language" value="Credit Card">
+                    <label for="Credit Card">Credit Card</label> 
+                    <input type="radio" id="radioBtn" name="fav_language" value="Pay on delivery">
+                    <label for="Pay on delivery" >Pay on delivery</label> <br><br>
+                    <input type="submit" value="Continue" class="btn btn-success" id="continue"> <br><br>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="netBanking">
+        <div class="row">
+            <div class="col-sm-12">
+                <form>
+                    <p>Select your bank:</p>
+                    <input type="radio" id="netBankings" name="fav_language" value="State Bank of India">
+                    <label for="State Bank of India">State Bank of India</label>
+                    <input type="radio" id="netBankings" name="fav_language" value="Axis Bank">
+                    <label for="Axis Bank">Axis Bank</label>
+                    <input type="radio" id="netBankings" name="fav_language" value="ICICI Bank">
+                    <label for="ICICI Bank">ICICI Bank</label>
+                    <input type="radio" id="netBankings" name="fav_language" value="Others">
+                    <label for="Others">Others</label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5 mb-3" id="proceedWithPayment" style="width: 200px;">
+        <a href="#" class="btn btn-success" id="payment">Proceed with payment</a>
+        <!-- <button class="btn btn-success" id="order">Buy Now</button> -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <form id="bankDetails">
+                    <div> 
+                        <label for="html">Enter Account Number</label> <br>
+                        <input type="text" placeholder="Enter Account Number" required> <br><br>
+                    </div>
+                    <div>
+                        <label for="html">Enter IFSC Code</label><br>
+                        <input type="text" placeholder="Enter IFSC Code" required> <br><br>
+                    </div>
+                    <div>
+                        <label for="html">Account Holder's Name</label><br>
+                        <input type="text" placeholder="Account Holder's Name" required> <br><br>
+                    </div>
+                </form>                  
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row"  id="bankDetailsOthers">
+            <div class="col-sm-12">
+                <p>Enter your bank details:</p>
+                <form>
+                    <div> 
+                        <label for="html">Bank Name</label> <br>
+                        <input type="text" placeholder="Bank Name" required> <br><br>
+                    </div>
+                    <div> 
+                        <label for="html">Enter Account Number</label> <br>
+                        <input type="text" placeholder="Enter Account Number" required> <br><br>
+                    </div>
+                    <div>
+                        <label for="html">Enter IFSC Code</label><br>
+                        <input type="text" placeholder="Enter IFSC Code" required> <br><br>
+                    </div>
+                    <div>
+                        <label for="html">Account Holder's Name</label><br>
+                        <input type="text" placeholder="Account Holder's Name" required> <br><br>
+                    </div>
+                </form>                  
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5 mb-3" style="width: 200px;">
+        <a href="#" class="btn btn-success text-center" id="reset">Reset</a>
+        <!-- <button class="btn btn-success" id="order">Buy Now</button> -->
+    </div>
+    
+    <div class="container text-center mt-5 mb-3" style="width: 200px;">
+        <a href="order_successful.html" class="btn btn-success" id="confirmPayment">Confirm Order</a>
+        <!-- <button class="btn btn-success" id="order">Buy Now</button> -->
+    </div>
+
+    <div class="col-sm-6">
+        <!-- <button id="back">Back</button> -->
+        <a href="index.html" class="btn btn-primary" id="back1" style="float: right;">Back</a>
+    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" 
+    integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

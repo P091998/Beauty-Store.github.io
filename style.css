@@ -1,0 +1,148 @@
+#heading{
+    margin-left: 50px;
+}
+
+#navbarResponsive{
+    margin-left: 700px;
+}
+
+/* #home{
+    background-image: url('beauty_world.jpg');
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+} */
+
+/* #home h3{
+    margin-left: 1200px;
+} */
+
+#home img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#products img{
+    height: 200px;
+    width: 286px;
+    object-fit: cover;
+}
+
+#tableResult{
+    border-radius: 2px;
+    /* border: 2px solid; */
+    height: 400px;
+    width: 400px;
+    margin-left: 200px;
+    /* display: none; */
+}
+#display{
+    display: none;
+}
+#displayImage{
+    height: 400px;
+    width: 400px;
+    /* border: chocolate 2px solid; */
+    /* display: none; */
+}
+#displayImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#quantity{
+    text-align: center;
+    /* display: none; */
+    border: none;
+    display: none;
+}
+
+#change{
+    display: none;
+}
+
+#order{
+    display: none;
+}
+
+#orderItems{
+    display: none;
+}
+
+#footer{
+    display: none;
+}
+
+#address{
+    display: none;
+}
+
+/* #orderPlaced{
+    /* margin-left: 250px;
+    margin-top: 100px; */
+    /* display: none; */
+/* } */ */
+
+#continueBrowsing{
+    width: 200px;
+    margin-left: 600px;
+    margin-top: 50px;
+    /* display: none; */
+}
+
+#colour_bg{
+    height: 500px;
+    width: auto;
+}
+
+#colour_bg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#contact{
+    height: 300px;
+}
+
+#payment{
+    display: none;
+}
+
+#orderDetailsPayment{
+    display: none;
+}
+
+#netBanking{
+    display: none;
+}
+
+#reset{
+    display: none;
+}
+
+#bankDetails{
+    display: none;
+}
+
+#confirmPayment{
+    display: none;
+}
+
+#BankOption{
+    display: none;
+}
+
+#paymentOption{
+    display: none;
+}
+
+#bankDetailsOthers{
+    display: none;
+}
+
+#back1{
+    display: none;
+}
